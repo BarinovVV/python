@@ -1,5 +1,5 @@
 run_first_day = int(input("Введите сколько вы пробежите в первый день в метрах:  "))
-goal_run = int(input("Введите какого результата вы планируете достигнут в метрах:  "))
+goal_run = int(input("Введите какого результата вы планируете достигнуть в метрах:  "))
 number_day = 1
 today_run = run_first_day
 print(f"В {number_day}-й день вы пробежали {run_first_day} метров")
