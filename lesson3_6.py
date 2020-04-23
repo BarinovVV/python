@@ -1,5 +1,8 @@
-def letters(string):
-    return string
+def int_func(word):
+    return word.capitalize()
 
 
-print(letters("1, 2, 3"))
+user_str = "capiTaliZe"
+
+print(user_str.capitalize())
+print(int_func(user_str))
