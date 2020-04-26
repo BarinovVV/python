@@ -17,5 +17,3 @@ for i in range(len(user_list)):
     user_list[i] = int_func(user_list[i])
 
 print(' '.join(user_list))
-
-
