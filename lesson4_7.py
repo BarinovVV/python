@@ -1,0 +1,1 @@
+print("start home work 7 for lesson 4")
