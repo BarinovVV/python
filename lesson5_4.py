@@ -13,3 +13,4 @@ with open('lesson5_4_rus.txt', 'w', encoding="utf-8") as f:
         elif '4' in line:
             line = line.replace('Four', 'Четыре')
         f.write(line)
+
