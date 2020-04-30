@@ -1,4 +1,4 @@
-with open('lesson5_1.txt', 'w') as f:
+with open('lesson5_1.txt', 'w', encoding="utf-8") as f:
     while True:
         line = input('Введите строку: ')
         if line == '':
