@@ -17,7 +17,7 @@ class TrafficLight:
                 sleep(7)
                 print(f'\033[33mПРИГОТОВИТЬСЯ - теперь 2 секунды горит {self.__color[1]} свет')
                 sleep(2)
-                print(f'\033[32mМОЖНО ЕХАТЬ - 30 секунд горит {self.__color[2]} свет')
+                print(f'\033[32mМОЖНО ЕХАТЬ - 10 секунд горит {self.__color[2]} свет')
                 sleep(10)
 
 
