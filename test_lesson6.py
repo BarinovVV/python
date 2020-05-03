@@ -1,1 +1,0 @@
-print('Start hw for lesson 6')
