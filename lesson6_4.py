@@ -23,7 +23,7 @@ class TownCar(Car):
         if self.speed > 60:
             print(f'Скорость автомобиля {self.name} - {self.speed}! Вы превышаете скорость!')
         else:
-            print(f'Скорость автомобиля {self.name} - {self.speed}')
+            super().show_speed()
 
 
 class SportCar(Car):
@@ -35,17 +35,17 @@ class WorkCar(Car):
         if self.speed > 40:
             print(f'Скорость автомобиля {self.name} - {self.speed}! Вы превышаете скорость!')
         else:
-            print(f'Скорость автомобиля {self.name} - {self.speed}')
+            super().show_speed()
 
 
 class PoliceCar(Car):
     pass
 
 
-my_car = SportCar(150, 'red', 'Ferrari', False)
+my_car = SportCar(250, 'red', 'Ferrari', False)
 town_car = TownCar(70, 'black', 'Mercedes', False)
 police_car = PoliceCar(150, 'yellow', 'Ford', True)
-work_car = WorkCar(40, 'green', 'Volvo', False)
+work_car = WorkCar(45, 'green', 'Volvo', False)
 
 my_car.go()
 my_car.stop()
