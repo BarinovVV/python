@@ -43,8 +43,8 @@ class PoliceCar(Car):
 
 
 my_car = SportCar(150, 'red', 'Ferrari', False)
-town_car = TownCar(70, 'black', 'Mercedes', True)
-police_car = PoliceCar(150, 'yellow', 'Ford', False)
+town_car = TownCar(70, 'black', 'Mercedes', False)
+police_car = PoliceCar(150, 'yellow', 'Ford', True)
 work_car = WorkCar(40, 'green', 'Volvo', False)
 
 my_car.go()
