@@ -16,4 +16,3 @@ cn_1 = ComplexNumber(1 - 2j)
 cn_2 = ComplexNumber(3 + 4j)
 print(cn_1 + cn_2)
 print(cn_1 * cn_2)
-
