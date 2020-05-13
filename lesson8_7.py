@@ -1,0 +1,1 @@
+print('start hw 7 for lesson 8')
