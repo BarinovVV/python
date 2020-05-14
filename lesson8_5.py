@@ -1,3 +1,36 @@
+class Warehouse:
+    ''' Склад '''
+    __equipments = dict()
+    __issued_equipments = dict()
+
+    def add_Equipment(self, key, value):
+        ''' Приём '''
+        if self.__equipments.get(key) == None:
+            self.__equipments[key] = 0
+        self.__equipments[key] += value
+
+    def issue_Equipment(self, key, value):
+        ''' Выдача '''
+        rest = self.__equipments.get(key)
+        if rest != None and rest >= value:
+            self.__equipments[key] -= value
+            if self.__equipments[key] == 0:
+                del self.__equipments[key]
+
+    def num(self, key):
+        value = self.__equipments.get(key)
+        return value if value != None else 0
+
+    def equipments_in_warehouse(self):
+        ''' Техника на складе '''
+        for i in self.__equipments:
+            print(f'{models[i].model} - {self.num(i)} шт.')
+
+    def issued_equipments(self):
+        ''' Выданная техника '''
+        print(f'\nВыдано в офис:\n{self.__equipments}')
+
+
 class OfficeEquipment:
     ''' Оргтехника '''
 
