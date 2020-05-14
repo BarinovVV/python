@@ -1,3 +1,9 @@
+class Warehouse:
+    ''' Склад '''
+    __equipments = dict()
+    __issued_equipments = dict()
+
+
 class OfficeEquipment:
     ''' Оргтехника '''
 
